@@ -1,0 +1,13 @@
+
+imports:
+- path: apigee-kube-docker-planet.jinja
+
+resources:
+- name: apigee-docker-planet
+  type: apigee-kube-docker-planet.jinja
+  properties:
+    gkeClusterName: apigee-docker-planet
+    zone: us-central1-a
+    initialNodeCount: 6
+    instanceType: n1-standard-2
+    apigeeReleaseVersion: master
